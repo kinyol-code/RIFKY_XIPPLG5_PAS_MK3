@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Snake Game</title>
+        <style>
+            canvas{
+                display: block;
+                margin: 0 auto;
+            }
+            .modal-content {
+            background-color: #fefefe;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button {
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        </style>
+    </head>
+    <canvas id="snake" width="608" height="608"></canvas>
+    <body>
+        <canvas id="snake" width="608" height="608"></canvas>
+
+        <!-- Notification and Restart Button -->
+        <div id="gameOverModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="restartGame()">&times;</span>
+                <p>Game Over!</p>
+                <button onclick="restartGame()">Restart Game</button>
+            </div>
+        </div>
+        
+        <script src="snake.js"></script>
+    </body>
+    
+</html>
